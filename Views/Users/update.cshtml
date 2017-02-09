@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+
+@model Vidola_Prototype_2.Models.VVideo
+
+<div class="signup">
+    <form method="post" action="~/Users/UpdateVideo">
+        <input type="text" class="email" name="title" value="@Model.Title" placeholder="Title" required="required" title="Enter a valid title" />
+        <textarea name="description" rows="4" cols="43" style="padding:10px; font-size:14px; color:#817F7F" placeholder="Description" class="email">@Model.Description</textarea>
+        <input type="text" class="email" name="video-link" value="@Model.Link" placeholder="Title" required="required" title="Enter a valid video link" />
+        <select name="category">
+            <option value="1" select>Music</option>
+            <option value="2">News</option>
+            <option value="3">Games</option>
+            <option value="4">Sports</option>
+            <option value="5">Entertainment</option>
+            <option value="6">Funny</option>
+            <option value="7">History</option>
+        </select>
+        <br />
+        <input type="hidden" name="vId" value="@ViewBag.vId" />
+        <input type="submit" value="UPDATE" />
+    </form>
+    <div class="clearfix"></div>
+</div>

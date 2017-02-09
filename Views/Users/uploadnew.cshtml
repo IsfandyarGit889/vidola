@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "uploadnew";
+}
+
+<!--<div class="abc1">
+    Left
+    <div class="services-icon">
+            <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+    </div>
+        <input type="file" value="Choose file...">
+    
+    
+        <h5>Select files to upload</h5>
+        <span>or</span>
+        <p>Drag and drop files</p>
+    
+</div>
+
+<div class="abc2">
+    Right
+</div>-->
+
+    <div class="upload">
+        <div class="container">
+            <div class="upload-grids">
+                <div class="upload-right">
+                    <div class="upload-file">
+                        <div class="services-icon">
+                            <span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+                        </div>
+                        <form method="post" action="~/Users/AddVideo" enctype="multipart/form-data">
+                            <input type="file" name="video-upload" value="Choose file...">
+                    </div>
+                    <div class="upload-info">
+                        <h5>Select files to upload</h5>
+                        <span>or</span>
+                        <p>Drag and drop files</p>
+                    </div>
+
+                    Choose a thumbnail for video:
+                    <br />
+                    <input type="file" name="video-upload" value="Choose file...">
+
+                    <div class="upload-form">
+                            <input type="text" class="email" name="title" placeholder="Title" required="required" title="Enter a valid title" />
+                            <textarea name="description" rows="4" cols="50" placeholder="Description" class="email"></textarea>
+                            <br />
+                            Category <select class="email" name="category" required="required">
+                                         <option value="0">Music</option>
+                                         <option value="1">Movie</option>
+                                         <option value="2">News</option>
+                                         <option value="3">Games</option>
+                                         <option value="4">Sports</option>
+                                         <option value="5">Entertainment</option>
+                                         <option value="6">Funny</option>
+                                         <option value="7">History</option>
+                                    </select>
+                            <br />
+                            <input type="submit" value="Upload Video" />
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div id="signup">
+        <h3>Upload Information</h3>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="MAX_FILE_SIZE" value="500000" />
+            <table width="400" cellpadding="3">
+                <tr>
+                    <td colspan="3"> </td>
+                </tr>
+                <tr>
+                    <td width="10" rowspan="2"> </td>
+                    <td width="120"><strong>Choose a file to upload:</strong></td>
+                    <td width="242"><input type="file" name="uploaded_file" /></td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <input type="submit" name="sendForm" value="Upload File" />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"> </td>
+                </tr>
+            </table>
+        </form>
+
+        <div class="signup">
+            <form method="post" action="~/Users/AddVideo">
+                <input type="text" class="email" name="title" placeholder="Title" required="required" title="Enter a valid title" />
+                <textarea name="description" rows="4" cols="50" placeholder="Description" class="email"></textarea>
+                <input type="submit" value="Upload Video" />
+            </form>
+        </div>
+        <div class="clearfix"> </div>
+    </div>-->
+

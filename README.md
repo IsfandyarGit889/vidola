@@ -1,2 +1,0 @@
-# vidola
-Video Sharing Website

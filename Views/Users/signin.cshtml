@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "Sign In";
+}
+
+    <div id="signin">
+        <h3>Login</h3>
+        <div class="social-sits">
+            <div class="facebook-button">
+                <a href="#">Connect with Facebook</a>
+            </div>
+            <div class="chrome-button">
+                <a href="#">Connect with Google</a>
+            </div>
+            <div class="button-bottom">
+                <p>New account? <a href="/Users/signin" class="play-icon popup-with-zoom-anim">Signup</a></p>
+            </div>
+        </div>
+
+        <p class="has-error">@ViewBag.LoginError</p>
+
+        <div class="signup">
+            <form  method="post" action="~/Users/LoginUser">
+                <input type="text" name ="email" class="email" placeholder="Enter email " required="required" pattern="([\w-\.]+ @Html.Raw("@") ([\w-]+\.)+[\w-]{2,4})?" />
+                <input type="password" name ="password" placeholder="Password" required="required" autocomplete="off" />
+                <input type="submit" value="LOGIN" />
+            </form>
+        </div>
+
+        <div class="forgot">
+            <a href="/Home/ForgotPassword">Forgot Password?</a>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
